@@ -51,6 +51,7 @@
     display: grid;
     grid-template-columns: 4fr auto;
     gap: 1.5rem;
+    row-gap: 0;
   }
 
   #shorten-url-input{
@@ -63,6 +64,8 @@
     padding: 1rem 2.5rem;
     border-radius: 5px;
     width: fit-content;
+    grid-column: 2;
+    grid-row: 1;
   }
 
   .results-wrapper{
