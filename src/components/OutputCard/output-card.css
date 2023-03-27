@@ -1,0 +1,67 @@
+.outputCard-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem auto;
+  width: 100%;
+  background: white;
+  position: relative;
+  top: -100px;
+  border-radius: 10px;
+  overflow-x: hidden;
+}
+
+.initial-URL{
+  border-bottom: 1px solid gray;
+  padding: 1rem;
+  color: var(--very-dark-violet);
+}
+
+.shortened-url{
+  padding: 1rem 1rem 0;
+  color: var(--cyan);
+}
+
+.copy-btn{
+  padding: 1rem;
+  align-items: center;
+}
+
+.copy-btn button{
+  border-radius: 5px;
+  width: 100%;
+  padding: .5rem;
+}
+
+@media screen and (min-width: 900px) {
+  .outputCard-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr .25fr;
+  }
+
+  .outputCard-wrapper span{
+    font-size: 20px;
+  }
+
+  .initial-URL{
+    border: none;
+    align-self: center;
+    padding: 1rem 2rem;
+  }
+
+  .shortened-url{
+    padding: 0 ;
+    text-align: right;
+    align-self: center;
+  }
+
+  .copy-btn{
+    padding: 1rem 2rem;
+    justify-self: right;
+  }
+
+  .copy-btn button{
+    width: inherit;
+    padding: .5rem 1.5rem;
+  }
+}

@@ -1,0 +1,57 @@
+.nav-wrapper{
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1.5rem 1rem;
+}
+
+.hamburger-btn{
+  background: transparent;
+}
+
+.site-sections{
+  display: none;
+}
+
+.user-account-container{
+  display: none;
+}
+
+@media screen and (min-width: 900px) {
+
+  #company-logo{
+    padding-right: 2rem;
+  }
+
+  .hamburger-btn{
+    display: none;
+  }
+
+  .nav-wrapper{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 2rem 7rem;
+  }
+
+  .nav-wrapper p{
+    color: var(--grayish-violet);
+    font-size: 16px;
+    font-weight: 700;
+    padding-right: 1rem;
+  } 
+
+  .nav-wrapper p:hover{
+    cursor: pointer;
+    color: var(--dark-violet);
+  }
+
+  .site-sections{
+    display: flex;
+  }
+
+  .user-account-container{
+    display: flex;
+    align-items: center;
+    justify-self: right;
+  }
+}

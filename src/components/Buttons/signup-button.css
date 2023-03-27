@@ -1,0 +1,15 @@
+.signup-btn{
+  border-radius: 1.4rem;
+  padding: .5rem 3rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+  .signup-btn{
+    padding: .5rem 1.5rem;
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+  
+}
